@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Your Cart</h1>
+
+<div id="cart"></div>
+
+<button class="main-btn" onclick="openCheckout()">
+  Checkout
+</button>
+
+<div id="checkoutModal" class="modal">
+
+  <div class="modal-content">
+
+    <h2>Checkout</h2>
+
+    <input id="name" placeholder="Name">
+    <input id="phone" placeholder="Phone">
+    <textarea id="address" placeholder="Address"></textarea>
+
+    <button class="main-btn" onclick="submitOrder()">
+      Send Order
+    </button>
+
+  </div>
+
+</div>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
