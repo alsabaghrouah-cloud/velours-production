@@ -4,7 +4,7 @@ const id = params.get("id");
 
 /* ================= LOAD ORDER ================= */
 
-fetch("http://localhost:3000/orders/" + id)
+fetch(API + "/orders/" + id)
 
 .then(res => res.json())
 

@@ -48,7 +48,7 @@ function addProduct() {
     }
   });
 
-  fetch("http://localhost:3000/products", {
+  fetch(API + "/products", {
 
     method: "POST",
 
@@ -95,7 +95,7 @@ function addProduct() {
 
 function loadProducts() {
 
-  fetch("http://localhost:3000/products")
+  fetch(API + "/products")
 
   .then(res => res.json())
 
@@ -134,7 +134,7 @@ function deleteProduct(id) {
 
   if (!confirmDelete) return;
 
-  fetch("http://localhost:3000/products/" + id, {
+  fetch(API + "/products/" + id, {
 
     method: "DELETE"
   })
@@ -151,7 +151,7 @@ function deleteProduct(id) {
 
 function loadOrders() {
 
-  fetch("http://localhost:3000/orders")
+  fetch(API + "/orders")
 
   .then(res => res.json())
 
@@ -199,7 +199,7 @@ function deleteOrder(event, id) {
 
   if (!confirmDelete) return;
 
-  fetch("http://localhost:3000/orders/" + id, {
+  fetch( API + "/orders/" + id, {
 
     method: "DELETE"
   })

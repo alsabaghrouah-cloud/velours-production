@@ -3,7 +3,7 @@ const id = params.get("id");
 
 /* ================= LOAD PRODUCT ================= */
 
-fetch("http://localhost:3000/products")
+fetch(API + "/products")
 
 .then(res => res.json())
 
