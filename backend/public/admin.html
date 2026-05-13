@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+
+  <h2>Admin Login</h2>
+
+  <input id="user" placeholder="Username">
+  <input id="pass" type="password" placeholder="Password">
+
+  <button type="button" class="main-btn" onclick="login()">
+    Login
+  </button>
+
+</div>
+
+<div id="panel" style="display:none;">
+
+  <h1>Admin Dashboard</h1>
+
+  <h2>Add Product</h2>
+
+  <input id="name" placeholder="Product Name">
+  <input id="price" placeholder="Price">
+  <textarea id="desc" placeholder="Description"></textarea>
+
+  <input id="instagramLink" placeholder="Instagram Link">
+
+ <h3>Sizes</h3>
+
+<label><input type="checkbox" value="S"> S</label>
+<label><input type="checkbox" value="M"> M</label>
+<label><input type="checkbox" value="L"> L</label>
+<label><input type="checkbox" value="XL"> XL</label>
+<label><input type="checkbox" value="XXL"> XXL</label>
+
+<h3>Colors</h3>
+
+<label><input type="checkbox" value="White"> White</label>
+<label><input type="checkbox" value="Black"> Black</label>
+<label><input type="checkbox" value="Red"> Red</label>
+<label><input type="checkbox" value="Green"> Green</label>
+<label><input type="checkbox" value="Blue"> Blue</label>
+<label><input type="checkbox" value="Purple"> Purple</label>
+<label><input type="checkbox" value="Brown"> Brown</label>
+  <br><br>
+
+  <button type="button" class="main-btn" onclick="addProduct()">
+    Add Product
+  </button>
+
+  <hr>
+
+  <h2>Products</h2>
+  <div id="list"></div>
+
+  <hr>
+
+  <h2>Orders</h2>
+  <div id="orders"></div>
+
+</div>
+
+<script src="config.js"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>
